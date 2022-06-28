@@ -1,12 +1,13 @@
 <?php
 
-    include('../Metodos/Sesion.php');
-    $Sesion = new Sesiones();
+include('../Metodos/Sesion.php');
+$Sesion = new Sesiones();
 
-    if (isset($_POST['Clave'])){
-        $Sesion->NuevaSesion();   
-    }
-    
+if (isset($_POST['Clave'])) {
+    $Sesion->NuevaSesion();
+}
+
+
 ?>
 
 <html>
@@ -23,7 +24,6 @@
 <body onload="Limpiar();" class="Cuerpo" >
 
     <section class="Ventana">
-
         <p class="Texto"> Ingresar al Sistema</p>
 
         <form name="form" action="Paso.php" method="POST">
@@ -70,14 +70,20 @@
         <br>
 
         <article class="CentradoSE"> 
-            <p>No estas Registrado, Paciente? </p> 
             <input type="Button" value="Registrar" onclick="Registrar()">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="Button" value="Cambiar Contraseña" onclick="CambCont()">
+            <!--<p class="CentradoSE">No estas Registrado, Paciente? </p> -->
         </article>
 
-        <article class="CentradoSE"> 
-            <p>Olvidaste La Contrase&ntilde;a? </p> 
+        <!-- <article class="CentradoSE"> 
             <input type="Button" value="Cambiar Contraseña" onclick="CambCont()">
-        </article>
+
+        </article>-->
+        <?php
+echo "<br>";
+echo "<br>";
+?>
 		
 		 <article class="CentradoSE"> 
            
