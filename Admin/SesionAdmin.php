@@ -49,27 +49,14 @@
 
             </article>
         </form>
- <br> <br> <br>
         <article class="Centrado">
 
             	<input type='button' value="Iniciar Sesion" Title="Iniciar Sesion" style='width:250px; height:50px' onclick="Validar();"> 
 				<input type='button' value="Limpiar Campos" Title="Limpiar Campos" style='width:250px; height:50px' onclick="Limpiar();">	
-			
-
-
-			    
-
-        </article>
-		 <br>
-		  <br>
-		
+ </article>
+		<br>
 		<article class="Centrado">
 		<input type="Button" value="Volver" onclick="Volver()">
-		
-		
-           
-
-		
         </article>
 
         <br>
