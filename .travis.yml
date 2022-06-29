@@ -10,7 +10,7 @@ before script:
   - composer install --dev
 
 script:
- - vendor/bin/phpunit tests --coverage-text
+ - vendor/bin/phpunit tests --configuration phpunit.xml
  
  notifications:
   email: keferrucho@poligran.edu.co
