@@ -1,0 +1,22 @@
+languaje: php
+
+php:
+  - 7.3
+cache: yarn
+ 
+before script: 
+  - composer self update
+  - composer install --prefer-source --no-interaction --dev
+notifications:
+  on_success: never
+  on_failure: always 
+cache:
+  directories:
+  - $HOME/.composer/cache/files
+  - vendor
+script:
+ - vendor/bin/phpunit tests --coverage-text
+ 
+ notifications:
+  email: keferrucho@poligran.edu.co
+  
