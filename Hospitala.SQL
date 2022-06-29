@@ -162,3 +162,4 @@ Inner Join Cita_Medica on Cita_Medica.Id_C = Historial_Clinico.Id_C
 Inner Join Med_Esp on Med_Esp.Id_Rel = Cita_Medica.Id_Rel
 Inner Join Paciente on Paciente.Id_Pac = Cita_Medica.Id_Pac
 Where Id_Med = 1;
+
